@@ -42,6 +42,7 @@
 </head>
 
 <body>
+	<div id="preloader"></div>
 	<div class="page-wrapper">
 		<header class="header header-transparent header-border">
 			<div class="header-middle sticky-header fix-top sticky-content">
@@ -130,7 +131,7 @@
 		<!-- End Header -->
 		<main class="main shop">
 			<div class="page-header"
-				style="background-image: url('images/demos/demo13/shoes.png'); background-color: #3C63A4;">
+				style="background-image: url('images/demos/demo13/shoes.webp'); background-color: #3C63A4;">
 				<h1 class="page-title">100+ premium Shoes</h1>
 				<h4 class="page-subtitle font-weight-normal">showing page 1 of 2</h4>
 			</div>
@@ -2166,6 +2167,17 @@
 	<script src="vendor/nouislider/nouislider.min.js"></script>
 	<!-- Main JS File -->
 	<script src="js/main.min.js"></script>
+
+	<script>
+
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+
+
+    </script>
 </body>
 
 </html>
