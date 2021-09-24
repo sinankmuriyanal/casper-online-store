@@ -45,6 +45,7 @@
 </head>
 
 <body>
+    <div id="preloader"></div>
 	<div class="page-wrapper">
 		<header class="header header-transparent header-border">
 			<div class="header-middle sticky-header fix-top sticky-content">
@@ -518,6 +519,17 @@
     <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
     <!-- Main JS File -->
     <script src="js/main.min.js"></script>
+
+    <script>
+
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+
+
+    </script>
 </body>
 
 </html>
